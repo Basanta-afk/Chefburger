@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Gallery(models.Model):
-    id=models.AutoField(primary_key='True', )
+    id=models.AutoField(primary_key='True', serialize = False,)
     img=models.ImageField(upload_to='dynamic_pictures')
 
 
